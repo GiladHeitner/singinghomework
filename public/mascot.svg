@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- chibi singing music note mascot -->
+  <g>
+    <!-- note stem + flag -->
+    <path d="M150 38 c0 -10 8 -16 18 -14 l44 10 c8 2 12 8 11 16 l-2 18 c-1 9 -10 13 -18 11 l-37 -9 -4 96 -16 -4 z"
+          fill="#7c3aed" stroke="#4c1d95" stroke-width="6" stroke-linejoin="round"/>
+    <!-- note head = chibi face -->
+    <ellipse cx="118" cy="178" rx="58" ry="50" fill="#8b5cf6" stroke="#4c1d95" stroke-width="6"/>
+    <!-- cheeks -->
+    <circle cx="84" cy="188" r="9" fill="#f0abfc" opacity="0.85"/>
+    <circle cx="152" cy="188" r="9" fill="#f0abfc" opacity="0.85"/>
+    <!-- eyes: happy closed arcs -->
+    <path d="M86 168 q10 -12 20 0" fill="none" stroke="#1e1b4b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M130 168 q10 -12 20 0" fill="none" stroke="#1e1b4b" stroke-width="6" stroke-linecap="round"/>
+    <!-- open singing mouth -->
+    <ellipse cx="118" cy="196" rx="13" ry="16" fill="#1e1b4b"/>
+    <ellipse cx="118" cy="202" rx="7" ry="7" fill="#fb7185"/>
+    <!-- little song sparkles -->
+    <path d="M52 96 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#fbbf24"/>
+    <path d="M210 120 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#fbbf24"/>
+    <path d="M196 76 q14 -6 20 6" fill="none" stroke="#a78bfa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M198 90 q12 -5 17 5" fill="none" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
