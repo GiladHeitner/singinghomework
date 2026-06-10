@@ -1,0 +1,17 @@
+{
+     "version": "1.0",
+     "targets": [
+       ".claude/skills"
+     ],
+     "skillDirectories": [
+       "/Users/giladheitner/kevinslin-skills/active"
+     ],
+     "additionalSkills": [],
+     "ignore": [
+       "experimental-*",
+       "*.test"
+     ],
+     "includeInstructions": false,
+     "autoSync": false,
+     "skillsSectionName": "## Additional Instructions"
+}
