@@ -83,15 +83,15 @@ Client keeps history (`localStorage`) of `{ title, genre, lyrics, phrases, audio
 
 ### Phase 1: Scaffold + de-risk
 - [x] create-next-app scaffold, deps installed (`@gradio/client`, `@fal-ai/client`, `@vercel/blob`, `openai`).
-- [ ] Introspect ACE-Step Space signature; pin in `lib/acestep.ts`.
+- [x] Introspect ACE-Step Space signature; pin in `lib/acestep.ts` (`/generation_wrapper`, 54 positional args; overrides at indices 4/5/15/16).
 
 ### Phase 2: Generation pipeline
-- [ ] `lib/lyrics.ts` + `/api/lyrics` with verbatim validation + retry.
-- [ ] `lib/acestep.ts`, `lib/fal.ts`, `/api/song` with fallback chain + Blob upload.
+- [x] `lib/lyrics.ts` + `/api/lyrics` with verbatim validation + retry.
+- [x] `lib/acestep.ts`, `lib/fal.ts`, `/api/song` with fallback chain + Blob upload.
 
 ### Phase 3: UI + polish
-- [ ] `app/page.tsx`: textarea, genre chips, staged loading, player, marked lyrics, history.
-- [ ] icon-gen mascot as favicon/header.
+- [x] `app/page.tsx`: textarea, genre chips, staged loading, player, marked lyrics, history.
+- [x] Mascot as favicon/header (hand-drawn chibi SVG; icon-gen's imagegen dependency unavailable, inline-icon script used for assets).
 
 ### Phase 4: Verify + deploy
 - [ ] End-to-end real song locally; fallback path exercised.
@@ -124,8 +124,9 @@ Manual validation:
 ## Open Items and Risks
 
 ### Open Items
-- [ ] Confirm actual ACE-Step Space endpoint signature (introspection running).
+- [x] Confirm actual ACE-Step Space endpoint signature (pinned in `lib/acestep.ts`).
 - [ ] User must create HF + OpenRouter keys before deploy.
+- [ ] Final listen-test blocked on keys: anonymous Space call validated the request shape (failed only on quota: "180s requested vs 0s left — authenticate for more"). Each generation reserves a 180s ZeroGPU slice → free quota ≈ a few songs/day; `FAL_KEY` recommended as overflow.
 
 ### Risks and Mitigations
 
@@ -152,3 +153,4 @@ Manual validation:
 
 ## Changelog
 - [2026-06-09 23:47]: Initial spec created from approved plan (session b4c14612-3d12-41a7-a849-8c59a12d1f0e)
+- [2026-06-10 00:10]: Phases 1–3 implemented; Space signature pinned; verification in progress (session b4c14612-3d12-41a7-a849-8c59a12d1f0e)
